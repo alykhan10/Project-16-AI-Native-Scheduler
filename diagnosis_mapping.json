@@ -1,0 +1,473 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-06-24",
+  "multi_label": true,
+  "categories": [
+      {
+      "exam_code": "DONOTBOOK",
+      "display_name": "Do Not Book / Refer Out",
+      "type": "hard_stop",
+      "priority_override": 999,
+      "message_to_user": "Please consult referring physician or hospital imaging department regarding the appropriate examination.",
+      "routing": {
+        "include_keywords": [
+          "appendicitis",
+          "appendix pain",
+          "suspected appendicitis",
+          "ruq vascular",
+          "dvt",
+          "deep vein thrombosis",
+          "venous thrombosis",
+          "arterial occlusion",
+          "ischemia",
+          "limb ischemia",
+          "aortic aneurysm",
+          "aaa",
+          "aortic dissection",
+          "vascular occlusion",
+          "carotid stenosis",
+          "arterial stenosis",
+          "acute limb pain",
+          "calf swelling acute",
+          "emergency abdominal pain",
+          "acute abdomen"
+        ],
+        "aliases": [
+          "vascular emergency",
+          "emergency vascular",
+          "appendix"
+        ]
+      }
+    },
+    {
+      "exam_code": "ABDO",
+      "display_name": "Abdomen Ultrasound",
+      "prep": {
+        "required": true,
+        "instructions": [
+          "Please fast for 12 hours prior to your exam.",
+          "The evening before: Enjoy a light, fat-free meal.",
+          "Avoid dairy, meat, eggs, and fried foods."
+        ]
+      },
+      "routing": {
+        "include_keywords": [
+          "fatty liver",
+          "cirrhosis",
+          "hepatitis",
+          "liver mass",
+          "gallstones",
+          "cholecystitis",
+          "pancreatitis",
+          "splenomegaly",
+          "abdominal pain",
+          "ruq pain",
+          "epigastric pain",
+          "jaundice",
+          "ascites"
+        ],
+        "exclude_keywords": [
+          "kidney",
+          "renal",
+          "bladder",
+          "uterus",
+          "ovary",
+          "testicle",
+          "scrotal",
+          "breast",
+          "hernia",
+          "shoulder",
+          "neck"
+        ],
+        "aliases": [
+          "abdomen",
+          "abdominal"
+        ]
+      }
+    },
+    {
+      "exam_code": "INGUINAL",
+      "display_name": "Inguinal / Abdominal Wall Ultrasound",
+      "prep": {
+        "required": false,
+        "instructions": []
+      },
+      "routing": {
+        "include_keywords": [
+          "hernia",
+          "inguinal hernia",
+          "femoral hernia",
+          "umbilical hernia",
+          "ventral hernia",
+          "abdominal wall mass",
+          "abdominal wall lump",
+          "groin mass",
+          "groin lump"
+        ],
+        "exclude_keywords": [
+          "kidney",
+          "renal",
+          "bladder",
+          "uterus",
+          "ovary",
+          "testicle",
+          "scrotal",
+          "breast",
+          "abdomen",
+          "shoulder",
+          "neck"
+        ],
+        "aliases": [
+          "abdominal wall",
+          "groin"
+        ]
+      }
+    },
+    {
+      "exam_code": "RENAL",
+      "display_name": "Renal Ultrasound",
+      "prep": {
+        "required": false,
+        "instructions": []
+      },
+      "routing": {
+        "include_keywords": [
+          "kidney stone",
+          "nephrolithiasis",
+          "renal cyst",
+          "renal mass",
+          "hydronephrosis",
+          "pyelonephritis",
+          "ckd",
+          "renal failure",
+          "flank pain",
+          "kidney infection"
+        ],
+        "exclude_keywords": [
+          "bladder",
+          "uterus",
+          "ovary",
+          "testicle",
+          "scrotal",
+          "breast",
+          "abdomen",
+          "hernia",
+          "shoulder",
+          "neck"
+        ],
+        "aliases": [
+          "kidney",
+          "renal"
+        ]
+      }
+    },
+    {
+      "exam_code": "BLADDER",
+      "display_name": "Bladder Ultrasound",
+      "prep": {
+        "required": true,
+        "instructions": [
+          "Drink 4 glasses of water 2 hours before the exam.",
+          "Finish drinking water 1 hour before the exam.",
+          "Do not empty bladder until after the exam."
+        ]
+      },
+      "routing": {
+        "include_keywords": [
+          "urinary retention",
+          "hematuria",
+          "bladder mass",
+          "uti",
+          "cystitis",
+          "frequency",
+          "urgency",
+          "dysuria",
+          "pvr"
+        ],
+        "exclude_keywords": [
+          "kidney",
+          "renal",
+          "uterus",
+          "ovary",
+          "testicle",
+          "scrotal",
+          "breast",
+          "abdomen",
+          "hernia",
+          "shoulder",
+          "neck"
+        ],
+        "aliases": [
+          "urinary bladder"
+        ]
+      }
+    },
+    {
+      "exam_code": "PELVIC",
+      "display_name": "Pelvic Ultrasound (Transabdominal)",
+      "prep": {
+        "required": true,
+        "instructions": [
+          "Drink 4 glasses of water 2 hours before the exam.",
+          "Finish drinking water 1 hour before the exam.",
+          "Do not empty bladder until after the exam."
+        ]
+      },
+      "routing": {
+        "include_keywords": [
+          "fibroid",
+          "uterine mass",
+          "abnormal uterine bleeding",
+          "menorrhagia",
+          "pelvic pain",
+          "iud",
+          "pelvic mass",
+          "uterine enlargement"
+        ],
+        "exclude_keywords": [
+          "ovarian cyst",
+          "adnexal mass",
+          "endometrial"
+        ],
+        "aliases": [
+          "uterus",
+          "uterine"
+        ]
+      }
+    },
+    {
+      "exam_code": "EV_PELVIC",
+      "display_name": "Endovaginal Pelvic Ultrasound",
+      "prep": {
+        "required": false,
+        "instructions": []
+      },
+      "routing": {
+        "include_keywords": [
+          "ovarian cyst",
+          "ovarian mass",
+          "adnexal mass",
+          "endometrial thickening",
+          "endometrial polyp",
+          "infertility",
+          "subfertility",
+          "ovarian lesion",
+          "adnexal lesion",
+          "torsion"
+        ],
+        "exclude_keywords": [
+          "kidney",
+          "renal",
+          "bladder",
+          "uterus",
+          "testicle",
+          "scrotal",
+          "breast",
+          "abdomen",
+          "hernia",
+          "shoulder",
+          "neck"
+        ],
+        "aliases": [
+          "transvaginal",
+          "tv ultrasound",
+          "endovaginal",
+          "ev ultrasound"
+        ]
+      }
+    },
+    {
+      "exam_code": "SOFT_TISSUE",
+      "display_name": "Soft Tissue Ultrasound",
+      "prep": {
+        "required": false,
+        "instructions": []
+      },
+      "routing": {
+        "include_keywords": [
+          "soft tissue mass",
+          "soft tissue lump",
+          "lipoma",
+          "cyst",
+          "nodule",
+          "lesion",
+          "subcutaneous mass",
+          "subcutaneous lump"
+        ],
+        "exclude_keywords": [
+          "kidney",
+          "renal",
+          "bladder",
+          "uterus",
+          "ovary",
+          "testicle",
+          "scrotal",
+          "breast",
+          "abdomen",
+          "hernia",
+          "shoulder",
+          "neck"
+        ],
+        "aliases": [
+          "subcutaneous"
+        ]
+      }
+    },
+    {
+      "exam_code": "THYROID_NECK",
+      "display_name": "Thyroid / Neck Ultrasound",
+      "prep": {
+        "required": false,
+        "instructions": []
+      },
+      "routing": {
+        "include_keywords": [
+          "thyroid nodule",
+          "thyroid mass",
+          "goiter",
+          "neck mass",
+          "neck lump",
+          "lymph node",
+          "lymphadenopathy",
+          "neck swelling"
+        ],
+        "exclude_keywords": [
+          "kidney",
+          "renal",
+          "bladder",
+          "uterus",
+          "ovary",
+          "testicle",
+          "scrotal",
+          "breast",
+          "abdomen",
+          "hernia",
+          "shoulder"
+        ],
+        "aliases": [
+          "thyroid",
+          "neck"
+        ]
+      }
+    },
+    {
+      "exam_code": "BREAST",
+      "display_name": "Breast Ultrasound",
+      "prep": {
+        "required": false,
+        "instructions": []
+      },
+      "routing": {
+        "include_keywords": [
+          "breast mass",
+          "breast lump",
+          "breast cyst",
+          "axillary mass",
+          "armpit lump",
+          "mastitis",
+          "breast lesion"
+        ],
+        "exclude_keywords": [
+          "kidney",
+          "renal",
+          "bladder",
+          "uterus",
+          "ovary",
+          "testicle",
+          "scrotal",
+          "abdomen",
+          "hernia",
+          "shoulder",
+          "neck"
+        ],
+        "aliases": [
+          "mammary",
+          "axilla",
+          "armpit"
+        ]
+      }
+    },
+    {
+      "exam_code": "SCROTAL",
+      "display_name": "Scrotal / Testicular Ultrasound",
+      "prep": {
+        "required": false,
+        "instructions": []
+      },
+      "routing": {
+        "include_keywords": [
+          "scrotal mass",
+          "scrotal lump",
+          "testicular mass",
+          "testicular pain",
+          "hydrocele",
+          "varicocele",
+          "epididymitis",
+          "orchitis",
+          "scrotal swelling"
+        ],
+        "exclude_keywords": [
+          "kidney",
+          "renal",
+          "bladder",
+          "uterus",
+          "ovary",
+          "breast",
+          "abdomen",
+          "hernia",
+          "shoulder",
+          "neck"
+        ],
+        "aliases": [
+          "testicle",
+          "testis",
+          "scrotum"
+        ]
+      }
+    },
+    {
+      "exam_code": "SHOULDER",
+      "display_name": "Shoulder Ultrasound",
+      "prep": {
+        "required": true,
+        "instructions": [
+          "This exam requires no preparation.",
+          "Please wear clothing that will allow you to easily expose the shoulder being examined.",
+          "A tank top is typically the best option."
+        ]
+      },
+      "routing": {
+        "include_keywords": [
+          "shoulder pain",
+          "rotator cuff",
+          "supraspinatus",
+          "infraspinatus",
+          "subscapularis",
+          "biceps tendon",
+          "bursitis",
+          "impingement",
+          "calcific tendinitis",
+          "shoulder mass",
+          "shoulder lump"
+        ],
+        "exclude_keywords": [
+          "kidney",
+          "renal",
+          "bladder",
+          "uterus",
+          "ovary",
+          "testicle",
+          "scrotal",
+          "breast",
+          "abdomen",
+          "hernia",
+          "neck"
+        ],
+        "aliases": [
+          "ac joint",
+          "shoulder joint"
+        ]
+      }
+    }
+  ]
+}
